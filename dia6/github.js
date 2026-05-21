@@ -1,5 +1,5 @@
 async function usuarioGitHub(){
-    const response = await fetch('https://api.github.com/users/jangel-x');
+    const response = await fetch('https://api.github.com/users/juan-angel-z');
     const data = await response.json();
 
     const avatar = document.getElementById('avatar');

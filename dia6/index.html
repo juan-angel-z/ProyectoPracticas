@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Personal</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="tema.js" defer></script>
+    <script src="estudio.js" defer></script>
+    <script src="github.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>PORTFOLIO PERSONAL</h1>
+        <nav class="enlaces">
+            <ul>
+                <li>
+                    <a href="#descPersonal">
+                        Sobre mí
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#habilidades">
+                        Habilidades
+                    </a>
+                </li>
+                <li>
+                    <a href="#sugerencias">
+                        Sugerencias
+                    </a>
+                </li>
+                <li>
+                    <a href="#proyectos">
+                        Proyectos
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="cambiar_tema">
+            <button type="button">Modo Oscuro</button>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="descPersonal" id="descPersonal">
+            <h2>Sobre mí</h2>
+            <p>Soy estudiante de <strong>Desarrollo de Aplicaciones Web</strong>.
+                Estoy realizando mis prácticas en <em>Cojali</em>, donde aprenderé a realizar paginas web avanzadas.
+                Empezaremos con <strong>HTML</strong> básico y terminaremos con el uso de frameworks como
+                <strong>React</strong>.
+            </p>
+            <div class="estudios">
+                <h3>Mis Estudios</h3>
+                <button type="button" id="abrir_estudio">Agregar Estudio</button>
+                <dialog id="Vestudio">
+                    <form id="form_estudio">
+                        <h3>Nuevo Estudio</h3>
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" name="titulo" required>
+                        <label for="centro">Centro:</label>
+                        <input type="text" id="centro" name="centro" required>
+                        <label for="anio">Año:</label>
+                        <input type="number" id="anio" name="anio" required>
+                        <div class="botones_dialog">
+                            <button type="button" id="aniadir_estudio">Añadir</button>
+                            <button type="button" id="cerrar_estudio">Cancelar</button>
+                        </div>
+                    </form>
+                </dialog>
+
+            </div>
+            <ul class="lista_estudios">
+
+            </ul>
+
+        </section>
+
+        <section class="habilidades" id="habilidades">
+            <h2>Habilidades Laborales</h2>
+            <ul>
+                <li>Capacidad de aprendizaje y adaptación.</li>
+                <li>Resolución de problemas de forma lógica y eficiente.</li>
+                <li>Virtualización de sistemas operativos.</li>
+                <li>Trabajo en equipo en entornos de desarrollo.</li>
+                <li>Comunicación efectiva.</li>
+
+            </ul>
+        </section>
+
+
+        <section class="sugerencias" id="sugerencias">
+            <h2>Sugerencias</h2>
+            <form action="/enviar" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="sugerencia">Sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" rows="4" required></textarea>
+
+                <button type="submit">Enviar sugerencia</button>
+            </form>
+        </section>
+
+
+    </main>
+
+    <section class="proyectos" id="proyectos">
+        <h2>Proyectos Futuros</h2>
+        <div class="bloques">
+            <article class="bloque">
+                <h3>Tienda Online</h3>
+                <p>Una tienda con carrito de compra y pasarela de pago, usando React y una API REST.</p>
+            </article>
+            <article class="bloque">
+                <h3>App de Tareas</h3>
+                <p>Aplicación para gestionar tareas del día a día con login de usuario y base de datos.</p>
+            </article>
+            <article class="bloque">
+                <h3>Portfolio Avanzado</h3>
+                <p>Versión mejorada de este portfolio con animaciones y diseño responsive completo.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="miGithub">
+        <h2>Mi Github</h2>
+        <div id="github_info">
+            <img id="avatar" />
+            <div id="github_info_texto">
+                <h2 id="github_nombre"></h2>
+                <ul id="repositorios"></ul>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Juan Ángel Moldovan Pop. Todos los derechos reservados.</p>
+        <div class="redes_sociales">
+            <a href="https://github.com/jangel-x" target="_blank">
+                <img src="https://imgs.search.brave.com/XvEkKxKr5bjwn9LoldcilGrVUpKnTw1ElIltgqAd55o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWdpdGh1Yi1pY29u/LXN2Zy1kb3dubG9h/ZC1wbmctMjI2MDk2/LnBuZz9mPXdlYnAm/dz0xMjg"
+                    alt="Logo de Github">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="https://imgs.search.brave.com/A3iKSSEvfa5S30oVdLs55d2XbDlxA5M2YWV9jLd4-xE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTMv/OTg2LzM0OC9zbWFs/bC94LXR3aXR0ZXIt/aWNvbi1sb2dvLXN5/bWJvbC1mcmVlLXBu/Zy5wbmc"
+                    alt="Logo de Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://imgs.search.brave.com/MRiGEzfTJWxujMcQc8exCBe_4y6ZzfxSymIrajCjvcU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9raXJp/c2FtYS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDQv/bGlua2VkaW4tbG9n/by1ibGFjay5wbmc"
+                    alt="Logo de Linkedin">
+            </a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,462 @@
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+/* Estilos para la barra de navegación */
+.enlaces ul {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces li {
+    list-style: none;
+}
+
+.enlaces a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+    font-size: 1rem;
+}
+
+.enlaces a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+/* Estilos para el botón de cambio de tema */
+#cambiar_tema button {
+    background-color: #dbdbdb;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+#cambiar_tema button:hover {
+    background-color: #bbb;
+}
+
+
+/* Estilos para el main y las secciones internas */
+main {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+/* Estilos para las secciones de descripción personal, habilidades y sugerencias */
+.descPersonal,
+.habilidades,
+.sugerencias {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    flex: 1;
+}
+
+.descPersonal h2,
+.habilidades h2,
+.sugerencias h2 {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.4rem;
+}
+
+/* Estilos para la sección de descripción personal */
+.descPersonal p {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.estudios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#Vestudio {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Vestudio h3 {
+    font-family: Georgia, serif;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.4rem;
+}
+
+#Vestudio label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+}
+
+#Vestudio input {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#abrir_estudio {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+#abrir_estudio:hover {
+    background-color: #111;
+}
+
+.botones_dialog {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.botones_dialog button {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.botones_dialog button[type="submit"] {
+    background-color: #333;
+    color: white;
+}
+
+.botones_dialog button[type="button"] {
+    background-color: #dbdbdb;
+    color: black;
+}
+
+
+.lista_estudios {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.lista_estudios li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para la sección de estudios */
+.descPersonal h3 {
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.4rem;
+}
+
+.habilidades ul {
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Formulario de Sugerencias */
+.sugerencias input,
+.sugerencias textarea {
+    width: 100%;
+    margin-bottom: 0.8rem;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.sugerencias button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Sección de Proyectos */
+.proyectos {
+    margin: 0 2rem 1rem 2rem;
+    padding: 1rem 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.proyectos h2 {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.4rem;
+}
+
+.bloques {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.bloque {
+    flex: 1;
+    background-color: white;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.bloque h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.bloque p {
+    font-size: 0.85rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Estilos para la sección de mi Github */
+.miGithub {
+    margin: 0 2rem 1rem 2rem;
+    padding: 1rem 1.5rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.miGithub h2 {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.4rem;
+}
+
+#github_info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-top: 0.8rem;
+}
+
+#avatar {
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+#github_info_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#github_nombre {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    border-bottom: none;
+    color: #333;
+}
+
+#repositorios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+#repositorios li {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer img {
+    padding-top: 10px;
+    width: 30px;
+}
+
+
+
+/* Modo Oscuro */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode header,
+body.dark-mode .descPersonal,
+body.dark-mode .habilidades,
+body.dark-mode .sugerencias,
+body.dark-mode .proyectos,
+body.dark-mode .miGithub,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode #cambiar_tema button {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode #cambiar_tema button:hover {
+    background-color: #111;
+}
+
+body.dark-mode #abrir_estudio {
+    background-color: #555;
+}
+
+body.dark-mode #abrir_estudio:hover {
+    background-color: #777;
+}
+
+body.dark-mode .bloque {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode #github_nombre {
+    color: #f5f5f5;
+}
+
+body.dark-mode #repositorios li {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #ccc;
+}
+
+body.dark-mode #avatar {
+    border-color: #444;
+}
+
+body.dark-mode .enlaces a {
+    color: rgb(200, 200, 200);
+}
+
+body.dark-mode .enlaces a:hover {
+    color: white;
+}
+
+body.dark-mode .descPersonal p,
+body.dark-mode .habilidades ul,
+body.dark-mode .bloque p {
+    color: #ccc;
+}
+
+body.dark-mode footer img {
+    filter: invert(1);
+}
+
+
+body.dark-mode #Vestudio {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+body.dark-mode #Vestudio h3 {
+    border-bottom-color: #444;
+}
+
+body.dark-mode #Vestudio input {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    border-color: #444;
+}
+
+body.dark-mode .botones_dialog button[type="button"] {
+    background-color: #444;
+    color: white;
+}
+
+
+
+/* Esta parte es para usar el modo oscuro
+   con variables, las definimos, asignamos colores
+   y en las etiquetas usar esas variables predefinidas */
+
+/*
+:root {
+    --bg: #ffffff;
+    --bg-card: #f5f5f5;
+    --bg-bloque: #ffffff;
+    --text: #333;
+    --text-enlace: rgb(86, 86, 86);
+    --text-enlace-hover: rgb(0, 0, 0);
+    --border: #ccc;
+    --img-filter: none;
+}
+
+body.dark-mode {
+    --bg: #121212;
+    --bg-card: #1e1e1e;
+    --bg-bloque: #2a2a2a;
+    --text: #f5f5f5;
+    --text-enlace: rgb(200, 200, 200);
+    --text-enlace-hover: white;
+    --border: #444;
+    --img-filter: invert(1);
+}
+*/
